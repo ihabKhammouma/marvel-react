@@ -1,7 +1,9 @@
-const express = require('express');
-const serveStatic = require("serve-static")
-const path = require('path');
-app = express();
-app.use(serveStatic(path.join(__dirname, 'dist')));
+import express from "express";
+import { fileURLToPath } from "url";
+import path from "path";
+var app = express();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+app.use(express.static(path.join(__dirname, "dist")));
 const port = process.env.PORT || 3000;
 app.listen(port);
