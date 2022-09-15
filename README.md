@@ -17,3 +17,14 @@ marvel api react typescript
 ```
   yarn run build
 ```
+
+### Configuration Marvel Api
+```
+config/config.ts 
+```
+
+API_ENDPOINT
+PUBLIC_KEY
+PRIVATE_KEY
+BACKEND_API
+BACKEND_Token
