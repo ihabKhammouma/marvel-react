@@ -16,7 +16,7 @@ const ApiProvider = () => {
 
   const getCharacters = async (
     page: number
-  ): Promise<AxiosResponse<Marvel[], any>> => {
+  ): Promise<AxiosResponse<Marvel, any>> => {
     const count = 20;
     const currentPage = page || 1;
     const currentOffset = currentPage === 1 ? 0 : count * (page - 1);

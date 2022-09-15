@@ -16,12 +16,11 @@ export const ListHeros = () => {
   const getCharacters = async (page: number): Promise<void> => {
     try {
       const res = await ApiProvider().getCharacters(page);
-
       const list: Character[] = res
         ? (res.data.data.results as Character[])
         : [];
       const total: number = res ? res.data.data.total : 0;
-      console.log(list);
+      
       setCharacters(list);
       setTotalCharacters(total);
       setCurrentPage(page);
