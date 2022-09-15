@@ -24,7 +24,11 @@ config/config.ts
 ```
 
 API_ENDPOINT
+
 PUBLIC_KEY
+
 PRIVATE_KEY
+
 BACKEND_API
+
 BACKEND_Token
